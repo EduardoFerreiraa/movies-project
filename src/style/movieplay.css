@@ -5,16 +5,16 @@
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.466)), url("../img/stranger-things-fund.jpg") no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
+    top: 0;
+    left: 0;
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgb(0, 0, 0);
 }
 
 .container {
@@ -85,5 +85,66 @@ body {
 .search-button:hover {
     cursor: pointer;
 }
+
+.main {
+    width: 100%;
+    background-color: black;
+}
+
+.movie-stranger {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.671)), url("../img/stranger-things-fund.jpg") no-repeat;
+    background-size: cover;
+}
+
+.content {
+    margin: 150px 0 0 100px;
+    padding: 60px;
+    border-radius: 15px;
+}
+
+.content .netflix {
+    margin-left: 5px;
+    font-weight: 100;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.content h1 {
+    font-size: 3.3rem;
+    color: white;
+}
+
+.watch-stranger {
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.watch-stranger a {
+    margin-right: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 25px 20px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.432);
+    text-decoration: none;
+    transition: border 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+
+.watch-stranger a:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.assine {
+    margin: 35px 0 0 10px;
+    color: rgb(128, 128, 128);
+}
+
 
 
