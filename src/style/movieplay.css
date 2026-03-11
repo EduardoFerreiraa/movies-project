@@ -94,7 +94,7 @@ body {
 .movie-stranger {
     height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.671)), url("../img/stranger-things-fund.jpg") no-repeat;
     background-size: cover;
@@ -119,6 +119,9 @@ body {
 }
 
 .watch-stranger {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-top: 50px;
     border-radius: 15px;
 }
@@ -130,9 +133,21 @@ body {
     border-radius: 15px;
     padding: 25px 20px;
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.432);
+    border: 1px solid rgb(255, 255, 255);
     text-decoration: none;
     transition: border 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+
+.watch-stranger > .add-favorites {
+    width: 80%;
+    color: black;
+    background-color: white;
+    transition: border 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+
+.watch-stranger > .add-favorites:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .watch-stranger a:hover {
@@ -142,9 +157,21 @@ body {
 }
 
 .assine {
-    margin: 35px 0 0 10px;
+    margin: 10px 0 0 10px;
     color: rgb(128, 128, 128);
 }
+
+.poster img {
+    border: 0.3px solid white;
+    border-radius: 30px;
+    transition: transform 1s ease;
+}
+
+.poster img:hover {
+    transform: scale(1.03);
+}
+
+
 
 
 
