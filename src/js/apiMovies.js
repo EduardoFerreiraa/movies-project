@@ -95,5 +95,27 @@ fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres
     })
 })
 
+const container5 = document.getElementById("filmes-geral");
+fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=pt-BR&sort_by=popularity.desc&page=1`)
 
+.then(res => res.json()) 
+.then(data => {
+
+    const filmes_geral = data.results;
+    filmes_geral.forEach(movie => {
+
+        const div = document.createElement("div");
+
+        const imagem =
+        "https://image.tmdb.org/t/p/w500" + movie.poster_path;
+
+        div.innerHTML = `
+            <img src="${imagem}" width="350">
+            <p>${movie.title}</p>
+        `;
+
+        container5.appendChild(div);
+    });
+
+});
 
