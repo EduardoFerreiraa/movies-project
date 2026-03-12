@@ -5,16 +5,16 @@
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.466)), url("../img/stranger-things-fund.jpg") no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
+    top: 0;
+    left: 0;
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgb(0, 0, 0);
 }
 
 .container {
@@ -85,5 +85,148 @@ body {
 .search-button:hover {
     cursor: pointer;
 }
+
+.main {
+    width: 100%;
+    background-color: black;
+}
+
+.movie-stranger {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.671)), url("../img/stranger-things-fund.jpg") no-repeat;
+    background-size: cover;
+}
+
+.content {
+    margin: 150px 0 0 100px;
+    border-radius: 15px;
+}
+
+.content .netflix {
+    margin-left: 5px;
+    font-weight: 100;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.content h1 {
+    font-size: 3.3rem;
+    color: white;
+}
+
+.content-sinopse {
+    margin-top: 15px;
+    width: 50%;
+    display: flex;
+}
+
+.sinopse {
+    display: flex;
+    color: white;
+}
+
+.watch-stranger {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.watch-stranger a {
+    margin-right: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 25px 20px;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    transition: border 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+
+.watch-stranger > .add-favorites {
+    width: 80%;
+    color: black;
+    background-color: white;
+    transition: border 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+
+.watch-stranger > .add-favorites:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.watch-stranger a:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.assine {
+    margin: 10px 0 0 10px;
+    color: rgb(128, 128, 128);
+}
+
+.poster {
+    margin-right: 12em;
+}
+
+.poster img {
+    border-radius: 20px;
+    transition: transform 1s ease;
+}
+
+.poster img:hover {
+    transform: scale(1.03);
+}
+
+.special-movies {
+    box-shadow: 0px -150px 100px rgb(0, 0, 0);
+    padding: 30px;
+    background-color: black;
+    width: 100%;
+}
+
+.highlights-movies .alta {
+    margin-left: 20px;
+    font-size: 1.8rem;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-bottom: 1px solid rgb(143, 0, 0);
+}
+
+.content-movies {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.item-movies p {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.item-movies img {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+.item-movies img:hover {
+    z-index: 1000;
+    transform: scale(1.05);
+}
+
+
+
+
+
 
 
