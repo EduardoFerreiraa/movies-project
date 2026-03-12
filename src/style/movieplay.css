@@ -206,7 +206,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .prevNext {
@@ -231,7 +231,7 @@ body {
     transform: scale(1.2);
 }
 
-#filmes {
+.lista-filmes {
     padding: 8px;
     overflow-x: hidden;
     display: flex;
@@ -239,21 +239,23 @@ body {
     scroll-behavior: smooth;
 }
 
-#filmes img {
+.lista-filmes img {
+    width: 300px;
     border-radius: 15px;
     transition: transform 0.4s ease;
 }
 
-#filmes p {
+.lista-filmes p {
     margin-top: 15px;
     font-size: 1.2rem;
     text-align: center;
     color: white;
 }
 
-#filmes img:hover {
+.lista-filmes img:hover {
     transform: scale(1.03);
 }
+
 
 
 
