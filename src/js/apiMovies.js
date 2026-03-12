@@ -1,6 +1,7 @@
 const apiKey = "1e71f59a5867b3d504b226aad0f74388";
-const container = document.getElementById("filmes");
 
+// FILMES EM ALTA
+const container = document.getElementById("filmes");
 fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=pt-BR`)
 
 .then(res => res.json()) 
@@ -24,6 +25,7 @@ fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&langua
 
 });
 
+// FILMES DE TERROR
 const container2 = document.getElementById("filmes-terror");
 
 fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=27&sort_by=popularity.desc&vote_count.gte=200&language=pt-BR`)
@@ -46,10 +48,10 @@ fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres
     })
 })
 
-
+// FILMES DE ANIMAÇÃO
 const container3 = document.getElementById("filmes-animacao");
 
-fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=27&sort_by=popularity.desc&vote_count.gte=200&language=pt-BR`)
+fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=16&sort_by=popularity.desc&language=pt-BR`)
 
 .then(res => res.json())
 .then(data => {
