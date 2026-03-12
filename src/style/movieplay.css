@@ -187,7 +187,7 @@ body {
 
 .special-movies {
     box-shadow: 0px -150px 100px rgb(0, 0, 0);
-    padding: 30px;
+    padding: 15px;
     background-color: black;
     width: 100%;
 }
@@ -198,7 +198,7 @@ body {
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    border-bottom: 1px solid rgb(143, 0, 0);
+    border-bottom: 1px solid rgb(102, 0, 0);
 }
 
 .highlights-movies > .movies {
@@ -232,7 +232,7 @@ body {
 }
 
 .lista-filmes {
-    padding: 8px;
+    padding: 15px;
     overflow-x: hidden;
     display: flex;
     gap: 25px;
@@ -241,19 +241,20 @@ body {
 
 .lista-filmes img {
     width: 300px;
+    height: 450px;
     border-radius: 15px;
     transition: transform 0.4s ease;
 }
 
 .lista-filmes p {
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .lista-filmes img:hover {
-    transform: scale(1.03);
+    transform: scale(1.035);
 }
 
 

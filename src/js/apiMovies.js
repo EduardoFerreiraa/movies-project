@@ -72,5 +72,28 @@ fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres
 })
 
 
+// FILMES DE AÇÃO
+const container4 = document.getElementById("filmes-acao");
+
+fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=28&sort_by=popularity.desc&vote_count.gte=200&language=pt-BR`)
+
+.then(res => res.json())
+.then(data => {
+
+    const acao = data.results
+    acao.forEach(movie => {
+
+        const div = document.createElement("div")
+        const imagem = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
+
+        div.innerHTML = `
+            <img src="${imagem}" width="350">
+            <p>${movie.title}</p>
+        `;
+
+        container4.appendChild(div);
+    })
+})
+
 
 
