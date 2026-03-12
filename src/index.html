@@ -8,7 +8,6 @@
     <title>Movie Zone</title>
 </head>
 <body>
-    
     <header class="header">
         <div class="container">
             <h1 class="logo"><a href="#">Movie Zone</a></h1>
@@ -55,40 +54,21 @@
             <div class="highlights-movies">
                 <p class="alta">Em alta</p>
 
-                <div class="content-movies">
-                    <div class="item-movies">
-                        <img src="img/filme-panico7.png" alt="Panico 7">
-                        <p>Panico 7</p>
-                    </div>
-                
-                    <div class="item-movies">
-                        <img src="img/filme-predador-terras-selvagens.png" alt="Panico 7">
-                        <p>Predador Terras selvagens</p>
-                    </div>
+                <div class="prevNext">
+                    <button id="voltar">⬅</button>
+                    <button id="next">➡</button>
+                </div>
 
-                    <div class="item-movies">
-                        <img src="img/filme-zootopia2.png" alt="Panico 7">
-                        <p>Zootopia 2</p>
-                    </div>
-
-                    <div class="item-movies">
-                        <img src="img/filme-a-empregada.png" alt="Panico 7">
-                        <p>A empregada</p>
-                    </div>
-
-                    <div class="item-movies">
-                        <img src="img/filme-o-primata.png" alt="Panico 7">
-                        <p>O primata</p>
-                    </div>
-
-                    <div class="item-movies">
-                        <img src="img/filme-maquina-de-guerra.png" alt="Panico 7">
-                        <p>Maquina de Guerra</p>
-                    </div>
+                <div class="movies">
+                    <p class="name-movie"></p>
+                    <div id="filmes"></div>
                 </div>
             </div>
         </section>
     </main>
+    
+    <script src="js/nextBack.js"></script>
+    <script src="js/apiMovies.js"></script>
 
 </body>
 </html>
