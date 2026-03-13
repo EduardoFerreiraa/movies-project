@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/movieplay.css">
+    <link rel="shortcut icon" href="img/letra-m.png" type="image/x-icon">
+    <title>Movie Zone</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="#">Movie Zone</a></h1>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="movies.html">Filmes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Séries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                <input class="search-input" type="search" placeholder="Pesquise o seu filme">
+                <button class="search-button"><img src="img/lupa.png" alt=""></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="movie-avatar">
+            <div class="filter">
+                <button class="item-button">a</button>
+                <button class="item-button">b</button>
+                <button class="item-button">c</button>
+                <button class="item-button">d</button>
+                <button class="item-button">e</button>
+                <button class="item-button">f</button>
+                <button class="item-button">g</button>
+                <button class="item-button">h</button>
+                <button class="item-button">i</button>
+                <button class="item-button">j</button>
+                <button class="item-button">k</button>
+                <button class="item-button">l</button>
+                <button class="item-button">m</button>
+                <button class="item-button">n</button>
+                <button class="item-button">o</button>
+                <button class="item-button">p</button>
+                <button class="item-button">q</button>
+                <button class="item-button">r</button>
+                <button class="item-button">s</button>
+                <button class="item-button">t</button>
+                <button class="item-button">u</button>
+                <button class="item-button">v</button>
+                <button class="item-button">w</button>
+                <button class="item-button">x</button>
+                <button class="item-button">y</button>
+                <button class="item-button">z</button>
+            </div>
+
+            <div class="content-movies">
+                <h1>Os melhores filmes estão aqui!</h1>
+
+                <div class="total-movies">
+                    <p class="name-movie"></p>
+                    <div id="filmes-geral" class="lista-filmes geral"></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/apiMovies.js"></script>
+</body>
+</html>
