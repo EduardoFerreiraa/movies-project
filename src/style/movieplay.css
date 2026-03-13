@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,8 +7,18 @@
 }
 
 body {
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
     background-color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
 }
 
 .header {
@@ -15,6 +27,7 @@ body {
     position: fixed;
     width: 100%;
     background-color: rgb(0, 0, 0);
+    z-index: 1000;
 }
 
 .container {
@@ -186,7 +199,7 @@ body {
 
 .special-movies {
     box-shadow: 0px -150px 100px rgb(0, 0, 0);
-    padding: 30px;
+    padding: 15px;
     background-color: black;
     width: 100%;
 }
@@ -197,32 +210,134 @@ body {
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    border-bottom: 1px solid rgb(143, 0, 0);
+    border-bottom: 1px solid rgb(102, 0, 0);
 }
 
-.content-movies {
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+.highlights-movies > .movies {
+    overflow-y: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
 
-.item-movies p {
-    margin-top: 10px;
-    text-align: center;
+.prevNext {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.prevNext button {
+    background-color: rgba(0, 0, 0, 0);
     color: white;
+    border: 1px solid rgb(104, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: transform 0.3s ease;
 }
 
-.item-movies img {
-    width: 100%;
+.prevNext button:hover {
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.2);
+}
+
+.lista-filmes {
     padding: 15px;
-    border-radius: 25px;
+    overflow-x: hidden;
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+.lista-filmes img {
+    width: 250px;
+    height: 380px;
+    border-radius: 15px;
     transition: transform 0.4s ease;
 }
 
-.item-movies img:hover {
-    z-index: 1000;
-    transform: scale(1.05);
+.lista-filmes p {
+    margin-top: 15px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
+
+.lista-filmes img:hover {
+    transform: scale(1.035);
+}
+
+.movie-avatar {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 70px;
+    background: linear-gradient(rgba(0, 0, 0, 0.966)), url("../img/avatar-fund.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.filter {
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+}
+
+.item-button {
+    text-transform: uppercase;
+    width: 50px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    border: 1.2px solid rgba(68, 68, 68, 0.212);
+    padding: 10px 20px;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.item-button:hover {
+    background-color: red;
+    border-bottom: 1px solid red;
+}
+
+.content-movies {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 100px;
+    color: white;
+}
+
+.content-movies > h1 {
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid rgb(32, 32, 32);
+    background: linear-gradient(180deg, #00000060, #0a0a0a44, #1111113d);
+}
+
+.geral {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.geral img {
+    width: 320px;
+    height: 450px;
+}
+
+.geral p {
+    margin-bottom: 40px;
+}
+
+
+
+
+
 
 
 
