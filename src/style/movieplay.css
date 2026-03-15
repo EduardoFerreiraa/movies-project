@@ -479,6 +479,12 @@ body {
     text-decoration: none;
     color: gray;
     padding: 15px;
+    transition: color 0.3s ease ;
+}
+
+.links-rapidos a:hover, .contato a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 .footer-display {
