@@ -369,6 +369,106 @@ body {
     font-size: 1rem;
 }
 
+/*============================= CATEGORIAS =============================*/
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 25px;
+    padding: 50px;
+}
+
+.categorias h1 {
+    text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.089);
+    color: white;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.categorias p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.categoria-movies {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.categoria-movies div {
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(39, 39, 39);
+    transition: transform 0.5s ease, text-shadow 0.4s ease;
+}
+
+.categoria-movies div:hover, .categoria-movies p:hover {
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.486);
+    transform: scale(1.02);
+    border: 1px solid rgb(134, 134, 134);
+}
+
+.categoria-movies h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+}
+
+.grid-acao {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)),  url("../img/filme-predador-terras-selvagens.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-terror {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/filme-panico7.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-animacao {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/filme-zootopia2.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-aventura {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/devoradores-de-estrelas.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-ficcao {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/homem-aranha-de-voltar-ao-lar.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-comedia {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/anaconda.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-fantasia {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/harry-potter.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-guerra {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/coracoes-de-ferro.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-romance {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/nossa-culpa.png") no-repeat center;
+    background-size: cover;
+}
+
+/*============================= FOOTER =============================*/
+
 .footer {
     border-top: 1.3px solid rgb(59, 59, 59);
     padding: 30px;
@@ -394,10 +494,3 @@ body {
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
-
