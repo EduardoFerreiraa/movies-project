@@ -35,7 +35,7 @@ prev3.addEventListener("click", () => {
         container3.scrollLeft -= 380;
 });
 
-// PARA FILMES DE ANIMACAO
+// PARA FILMES DE ACAO
 const next4 = document.getElementById("next-acao");
 const prev4 = document.getElementById("prev-acao");
 

@@ -334,7 +334,40 @@ body {
     margin-bottom: 40px;
 }
 
+.movies-gratuito {
+    margin-top: 70px;
+    padding: 50px;
+    border-top: 1px solid rgb(59, 59, 59);
+}
 
+.gratuito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.movies-gratuito h3 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.movies-gratuito p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.desc-movieZone {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.desc-movieZone p {
+    width: 70%;
+    color: rgb(92, 92, 92);
+    font-size: 1rem;
+}
 
 
 
