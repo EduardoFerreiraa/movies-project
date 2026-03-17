@@ -304,33 +304,32 @@ body {
 
 .content-movies {
     text-align: center;
-    font-size: 1.6rem;
     margin-top: 100px;
     color: white;
 }
 
 .content-movies > h1 {
+    font-size: 2.5rem;
     padding: 10px;
     width: 70%;
-    margin: 0 auto;
-    border: 1px solid rgb(32, 32, 32);
-    background: linear-gradient(180deg, #00000060, #0a0a0a44, #1111113d);
+    margin: 20px auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
 }
 
 .geral {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
 }
 
 .geral img {
-    width: 320px;
-    height: 450px;
+    width: 300px;
+    height: 430px;
 }
 
 .geral p {
-    margin-bottom: 40px;
+    padding: 0;
+    margin: 15px 0 40px 0;
 }
 
 .movies-gratuito {
@@ -466,6 +465,70 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/nossa-culpa.png") no-repeat center;
     background-size: cover;
 }
+
+/*============================= FORMULÁRIO CONTATO =============================*/
+
+.entre-em-contato {
+    width: 600px;
+    margin: 50px 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 15px;
+    height: 80vh;
+}
+
+.entre-em-contato h1 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+
+.entre-em-contato input, .entre-em-contato textarea, .entre-em-contato .contato-button {
+    resize: none;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: rgb(26, 26, 26);
+    border: 1px solid rgb(36, 36, 36);
+}
+
+.entre-em-contato .destaque-button {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(146, 0, 0);
+    border: none;
+    border-radius: 5px;
+    transition: color 0.5s;
+}
+
+.entre-em-contato .destaque-button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.entre-em-contato label {
+    margin-bottom: 5px;
+}
+
+.form-contato {
+    background: linear-gradient(135deg,#000000a8,#11111175,#1c1c1cab, #000000a8);   
+    margin: 0 auto;
+    height: 85%;
+    width: 100%;
+    border: 1px solid rgb(46, 46, 46);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+}
+
 
 /*============================= FOOTER =============================*/
 
