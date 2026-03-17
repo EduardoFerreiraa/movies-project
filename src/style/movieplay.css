@@ -304,33 +304,32 @@ body {
 
 .content-movies {
     text-align: center;
-    font-size: 1.6rem;
     margin-top: 100px;
     color: white;
 }
 
 .content-movies > h1 {
+    font-size: 2.5rem;
     padding: 10px;
     width: 70%;
-    margin: 0 auto;
-    border: 1px solid rgb(32, 32, 32);
-    background: linear-gradient(180deg, #00000060, #0a0a0a44, #1111113d);
+    margin: 20px auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
 }
 
 .geral {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
 }
 
 .geral img {
-    width: 320px;
-    height: 450px;
+    width: 300px;
+    height: 430px;
 }
 
 .geral p {
-    margin-bottom: 40px;
+    padding: 0;
+    margin: 15px 0 40px 0;
 }
 
 .movies-gratuito {
@@ -369,6 +368,246 @@ body {
     font-size: 1rem;
 }
 
+/*============================= CATEGORIAS =============================*/
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 25px;
+    padding: 50px;
+}
+
+.categorias h1 {
+    text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.089);
+    color: white;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.categorias p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.categoria-movies {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.categoria-movies div {
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(39, 39, 39);
+    transition: transform 0.5s ease, text-shadow 0.4s ease;
+}
+
+.categoria-movies div:hover, .categoria-movies p:hover {
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.486);
+    transform: scale(1.02);
+    border: 1px solid rgb(134, 134, 134);
+}
+
+.categoria-movies h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+}
+
+.grid-acao {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)),  url("../img/filme-predador-terras-selvagens.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-terror {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/filme-panico7.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-animacao {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/filme-zootopia2.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-aventura {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/devoradores-de-estrelas.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-ficcao {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/homem-aranha-de-voltar-ao-lar.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-comedia {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/anaconda.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-fantasia {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/harry-potter.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-guerra {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/coracoes-de-ferro.png") no-repeat center;
+    background-size: cover;
+}
+
+.grid-romance {
+    background: linear-gradient(rgba(0, 0, 0, 0.788)), url("../img/nossa-culpa.png") no-repeat center;
+    background-size: cover;
+}
+
+/*============================= FORMULÁRIO CONTATO =============================*/
+
+.entre-em-contato {
+    width: 600px;
+    margin: 50px 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 15px;
+    height: 80vh;
+}
+
+.entre-em-contato h1 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+
+.entre-em-contato input, .entre-em-contato textarea, .entre-em-contato .contato-button {
+    resize: none;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: rgb(26, 26, 26);
+    border: 1px solid rgb(36, 36, 36);
+}
+
+.entre-em-contato .destaque-button {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(146, 0, 0);
+    border: none;
+    border-radius: 5px;
+    transition: color 0.5s;
+}
+
+.entre-em-contato .destaque-button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.entre-em-contato label {
+    margin-bottom: 5px;
+}
+
+.form-contato {
+    background: linear-gradient(135deg,#000000a8,#11111175,#1c1c1cab, #000000a8);   
+    margin: 0 auto;
+    height: 85%;
+    width: 100%;
+    border: 1px solid rgb(46, 46, 46);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+/*============================= SÉRIES =============================*/
+
+.fund-boys {
+    background: linear-gradient(rgba(0, 0, 0, 0.13)), url("../img/the-boys.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-boys {
+    border-radius: 5px;
+    margin-top: 30em;
+    padding: 30px;
+}
+
+.content-boys h1 {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.404);
+    padding: 15px;
+    color: white;
+    font-size: 3em;
+}
+
+.actions-play {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.actions-play a {
+    font-size: 1.1em;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: white;
+    text-decoration: none;
+    padding: 20px 80px;
+    color: black;
+    transition: color 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.actions-play a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.493);
+}
+
+.series {
+    box-shadow: 0px -20px 35px rgb(0, 0, 0);
+}
+
+#series-populares {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#series-populares div, #series-populares p {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+#series-populares img {
+    padding: 10px;
+    border-radius: 20px;
+    width: 330px;
+    height: 450px;
+    transition: transform 0.5s ease;
+}
+
+#series-populares img:hover {
+    transform: scale(1.05);
+}
+
+/*============================= FOOTER =============================*/
+
 .footer {
     border-top: 1.3px solid rgb(59, 59, 59);
     padding: 30px;
@@ -379,6 +618,12 @@ body {
     text-decoration: none;
     color: gray;
     padding: 15px;
+    transition: color 0.3s ease ;
+}
+
+.links-rapidos a:hover, .contato a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 .footer-display {
@@ -394,10 +639,3 @@ body {
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
-

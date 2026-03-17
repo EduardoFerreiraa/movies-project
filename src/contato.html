@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/movieplay.css">
+    <link rel="shortcut icon" href="img/letra-m.png" type="image/x-icon">
+    <title>Contato</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="#">Movie Zone</a></h1>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="movies.html">Filmes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="series.html">Séries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                <input class="search-input" type="search" placeholder="Pesquise o seu filme">
+                <button class="search-button"><img src="img/lupa.png" alt=""></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="movie-avatar">
+            <div class="entre-em-contato">
+                <form class="form-contato">
+                    <h1>Entre em contato conosco</h1>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="25"></textarea>
+
+                    <button class="contato-button destaque-button">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-display">
+            <div class="links-rapidos">
+                <a href="movies.html">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="categorias.html">Categorias</a>
+                <a href="#">Contato</a>
+            </div>
+            <div class="contato">
+                <a href="#">Instagram</a>
+                <a href="#">Youtube</a>
+                <a href="#">Email de contato</a>
+            </div>
+        </div>
+        <div class="direitos">
+            <p>© 2026 Movie Zone. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/apiMovies.js"></script>
+</body>
+</html>
