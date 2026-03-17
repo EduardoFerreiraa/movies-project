@@ -303,31 +303,43 @@ body {
 }
 
 .content-movies {
+    padding: 25px;
+    width: 70%;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 100px auto;
     color: white;
 }
 
 .content-movies > h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px rgba(255, 255, 255, 0.164);
     font-size: 2.5rem;
-    padding: 10px;
-    width: 70%;
-    margin: 20px auto;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+    width: 90%;
+    margin: 100px auto;
+    border-bottom: 1px solid rgba(88, 88, 88, 0.226);
 }
 
 .geral {
-    margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 .geral img {
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 15px;
     width: 300px;
-    height: 430px;
+    height: 400px;
+    transition: transform 0.5s ease;
+}
+
+.geral img:hover {
+    transform: scale(1.05);
 }
 
 .geral p {
+    color: white;
     padding: 0;
     margin: 15px 0 40px 0;
 }
@@ -500,16 +512,17 @@ body {
 .entre-em-contato .destaque-button {
     font-size: 1rem;
     font-weight: bold;
-    background-color: rgb(146, 0, 0);
+    background-color: rgb(194, 194, 194);
+    color: black;
     border: none;
     border-radius: 5px;
-    transition: color 0.5s;
+    transition: background-color 0.5s ease;
 }
 
 .entre-em-contato .destaque-button:hover {
     cursor: pointer;
-    color: black;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.13);
 }
 
 .entre-em-contato label {
@@ -517,7 +530,7 @@ body {
 }
 
 .form-contato {
-    background: linear-gradient(135deg,#000000a8,#11111175,#1c1c1cab, #000000a8);   
+    background: rgba(0, 0, 0, 0);   
     margin: 0 auto;
     height: 85%;
     width: 100%;
@@ -582,10 +595,14 @@ body {
     box-shadow: 0px -20px 35px rgb(0, 0, 0);
 }
 
+.series > div {
+    width: 80%;
+    margin: 0 auto;
+}
+
 #series-populares {
-    margin: 10px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 #series-populares div, #series-populares p {
@@ -595,10 +612,10 @@ body {
 }
 
 #series-populares img {
+    width: 300px;
+    height: 400px;
     padding: 10px;
     border-radius: 20px;
-    width: 330px;
-    height: 450px;
     transition: transform 0.5s ease;
 }
 
