@@ -21,6 +21,8 @@ body {
     }
 }
 
+/* =========== HEADER =========== */
+
 .header {
     top: 0;
     left: 0;
@@ -98,6 +100,8 @@ body {
 .search-button:hover {
     cursor: pointer;
 }
+
+/* =========== MAIN =========== */
 
 .main {
     width: 100%;
